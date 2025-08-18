@@ -1,0 +1,26 @@
+body{
+    font-family:serif;
+}
+#top{
+    background-color:#2cbcfa;
+    font-size: x-large;
+    font-family: fantasy;
+  
+}
+.me-auto{
+    font-weight: 500;
+    gap: 20px;
+    margin-left: 30%;
+}
+#form{
+    width: 20%;
+    
+}
+/* -------------------------------------------- */
+.footer{
+    background-color: #aae1f8;
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
