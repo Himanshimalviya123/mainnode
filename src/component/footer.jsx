@@ -1,7 +1,7 @@
 const Footer=()=>{
     return(
         <>
-        <div class="footer">
+        <div className="footer">
         <h5 align="center">@2020 copyright:MDBootstrap.com</h5>
         </div>
         </>

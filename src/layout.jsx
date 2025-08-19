@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Topnav from "./component/header";
 import Footer from "./component/footer";
-
-
 const Layout=()=>{
     return(
         <>
@@ -13,8 +11,7 @@ const Layout=()=>{
         <div id="outlet">
             <Outlet/>
         </div>
-         
-        <Footer/>
+          <Footer/>
         </>
     )
 }

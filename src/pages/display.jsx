@@ -1,9 +1,7 @@
 import Table from 'react-bootstrap/Table';
-import { useState,useEffect } from 'react';
-import axios from "axios";
+import {useState,useEffect } from 'react';
+import axios from 'axios';
 import BackendURL from '../utils/backendurl';
-
-
 const Display=()=>{
   const [mydata,setMydata]=useState([]);
   const loadData=async()=>{
@@ -12,8 +10,7 @@ const Display=()=>{
     setMydata(response.data);
     console.log(response.data);
   }
-
-  useEffect(()=>{
+useEffect(()=>{
     loadData();
   },[])
 
