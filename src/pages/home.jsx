@@ -1,8 +1,14 @@
+import axios from "axios";
+
+
 const Home=()=>{
+
+
     return(
         <>
-        <h5>welcome to homepage</h5>
+          <h1> Welcome To Home Page</h1>
         </>
     )
 }
+
 export default Home;

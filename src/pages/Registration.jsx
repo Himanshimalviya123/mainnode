@@ -1,8 +1,8 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import BackendUrl from '../utils/backendurl';
-import axios from 'axios';
+import BackendUrl from '../utils/BackendUrl';
+import axios from "axios";
 const Registration=()=>{
 const [input, setInput] = useState({});
 
