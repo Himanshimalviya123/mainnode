@@ -6,7 +6,7 @@ const MyEdit=()=>{
     const {id} = useParams();
     const [mydata, setMydata]= useState({});
     const loadData=async()=>{
-          let api=`${BackendUrl}user/datashow/?id=${id}`;
+          let api=`${BackendUrl}students/datashow/?id=${id}`;
           const response = await axios.get(api);
           console.log(response.data); 
           setMydata(response.data);      
@@ -22,7 +22,7 @@ const MyEdit=()=>{
     }
 
     const handleSubmit=async()=>{
-             let api=`${BackendUrl}user/editsave`;
+             let api=`${BackendUrl}students/editsave`;
              const response = await axios.post(api, mydata);
              console.log(response.data);
              alert("Succesfully updated!!!");

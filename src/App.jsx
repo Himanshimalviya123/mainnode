@@ -1,9 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
+
 import Home from "./pages/Home";
-import Registration from "./pages/Registration";
-import Login from "./pages/Login";
-import UserDashboard from "./pages/UserDashboard";
+import Registration from "./pages/registration";
+
+import UserDashboard from "./pages/userdashboard";
+import Layout from "./Layout";
+import Login from "./pages/login";
+
 
 const App=()=>{
   return(
@@ -13,12 +16,12 @@ const App=()=>{
         <Route path="/" element={<Layout/>}>
          <Route index element={<Home/>}/>
           <Route path="home" element={<Home/>}/>
-         <Route path="Registration" element={<Registration/>}/>
-         <Route path="Login" element={<Login/>} />
+         <Route path="registration" element={<Registration/>}/>
+         <Route path="login" element={<Login/>} />
         </Route>
       </Routes>
       <Routes>
-         <Route path="Userdashboard" element={<UserDashboard/>}>
+         <Route path="/dashboard" element={<UserDashboard/>}>
          
          </Route>
       </Routes>

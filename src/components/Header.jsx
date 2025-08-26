@@ -9,11 +9,11 @@ const Header = () => {
         <>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="#Home">CRUD Opeartion</Navbar.Brand>
+                    <Navbar.Brand href="#home">CRUD Opeartion</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link as={Link} to="Home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="Registration">Registration</Nav.Link>
-                        <Nav.Link as={Link} to="Login">Login</Nav.Link>
+                        <Nav.Link as={Link} to="home">Home</Nav.Link>
+                        <Nav.Link as={Link} to="registration">Registration</Nav.Link>
+                        <Nav.Link as={Link} to="login">Login</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
