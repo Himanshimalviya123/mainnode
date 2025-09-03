@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Registration from "./pages/registration";
+
 
 import UserDashboard from "./pages/userdashboard";
 import Layout from "./Layout";
 import Login from "./pages/login";
+import Registration from "./pages/Registration";
 
 
 const App=()=>{
