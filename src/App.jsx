@@ -1,33 +1,24 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./pages/Home";
-
-
 import UserDashboard from "./pages/userdashboard";
-import Layout from "./Layout";
 import Login from "./pages/login";
+import Layout from "./layout";
 import Registration from "./pages/Registration";
 
-
-const App=()=>{
-  return(
-    <>
+const App = () => {
+  return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
-         <Route index element={<Home/>}/>
-          <Route path="home" element={<Home/>}/>
-         <Route path="registration" element={<Registration/>}/>
-         <Route path="login" element={<Login/>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="registration" element={<Registration />} />
+          <Route path="login" element={<Login />} />
+          <Route path="dashboard" element={<UserDashboard />} />
         </Route>
       </Routes>
-      <Routes>
-         <Route path="/dashboard" element={<UserDashboard/>}>
-         
-         </Route>
-      </Routes>
-    </BrowserRouter>   
-    </>
-  )
-}
+    </BrowserRouter>
+  );
+};
+
 export default App;

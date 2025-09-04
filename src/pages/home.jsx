@@ -42,7 +42,58 @@
 
 // export default Home;
 
+// -------------------relationship database one to one -------------------------------
 
+
+// import { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+// import Form from 'react-bootstrap/Form';
+// import axios from "axios";
+// const Home=()=>{
+// const [input, setInput] = useState({});
+
+// const handleInput=(e)=>{
+//   let name=e.target.name;
+//   let value=e.target.value;
+//   setInput(values=>({...values, [name]:value}));
+//   console.log(input);
+// }
+// const handleSubmit=async(e)=>{
+//   e.preventDefault();
+//   let api="http://localhost:8000/usersave";
+//   const response = await axios.post(api, input);
+//   console.log(response);
+//  ;
+// }
+// return(
+//         <>
+//           <h1 align="center"> User Registration </h1>
+//            <Form style={{width:"600px", margin:"auto"}}>
+//       <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Enter username</Form.Label>
+//         <Form.Control type="text" name="username" onChange={handleInput} />
+//       </Form.Group>
+//        <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Enter Email</Form.Label>
+//         <Form.Control type="text" name="email"  onChange={handleInput} />
+//       </Form.Group>
+//        <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Enter firstname</Form.Label>
+//         <Form.Control type="text" name="firstname"  onChange={handleInput} />
+//       </Form.Group>
+//       <Form.Group className="mb-3" controlId="formBasicEmail">
+//         <Form.Label>Enter lastname</Form.Label>
+//         <Form.Control type="text" name="lastname"  onChange={handleInput} />
+//       </Form.Group>
+//       <Button variant="primary" type="submit" onClick={handleSubmit}>
+//         Submit
+//       </Button>
+//     </Form>
+//         </>
+//     )
+// }
+// export default Home;
+// ------------------------------relationship database one to many-------------------
 
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
@@ -59,30 +110,30 @@ const handleInput=(e)=>{
 }
 const handleSubmit=async(e)=>{
   e.preventDefault();
-  let api="http://localhost:8000/usersave";
+  let api="http://localhost:8000/authorsave";
   const response = await axios.post(api, input);
   console.log(response);
  ;
 }
 return(
         <>
-          <h1 align="center"> User Registration </h1>
+          <h1 align="center"> ENTER AUTHOR DETAIL</h1>
            <Form style={{width:"600px", margin:"auto"}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter username</Form.Label>
-        <Form.Control type="text" name="username" onChange={handleInput} />
+        <Form.Label>Enter authorname</Form.Label>
+        <Form.Control type="text" name="authorname" onChange={handleInput} />
       </Form.Group>
        <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Email</Form.Label>
         <Form.Control type="text" name="email"  onChange={handleInput} />
       </Form.Group>
        <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter firstname</Form.Label>
-        <Form.Control type="text" name="firstname"  onChange={handleInput} />
+        <Form.Label>Enter bookname</Form.Label>
+        <Form.Control type="text" name="bookname"  onChange={handleInput} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Enter lastname</Form.Label>
-        <Form.Control type="text" name="lastname"  onChange={handleInput} />
+        <Form.Label>Enter book price</Form.Label>
+        <Form.Control type="text" name="bookprice"  onChange={handleInput} />
       </Form.Group>
       <Button variant="primary" type="submit" onClick={handleSubmit}>
         Submit
