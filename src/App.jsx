@@ -4,7 +4,6 @@ import UserDashboard from "./pages/userdashboard";
 import Login from "./pages/login";
 import Layout from "./layout";
 import Registration from "./pages/Registration";
-
 const App = () => {
   return (
     <BrowserRouter>
